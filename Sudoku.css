@@ -1,0 +1,23 @@
+h1 {
+    border: double;
+    text-align: center;
+    font-size: 100px;
+}
+.square {
+    border: double;
+    float: left;
+}
+.squareEnd {
+    border: double;
+    display: inline-block;
+}
+#sudoku {
+    padding-left: 24%;
+}
+#buttons {
+    padding-left: 37%;
+}
+#solver {
+
+    font-size: 100px;
+}
