@@ -11,13 +11,13 @@
 
             for(var i = 0; i < 9; i++) {
                 for (var j = 0; j < 9; j++) {
-                    sudokuArray[i][j] = document.getElementById((i + 1) + "," + (j + 1)).value;
+                    sudokuArray[i][j] = {value: document.getElementById((i + 1) + "," + (j + 1)).value, array:[0,0,0,0,0,0,0,0,0]};
                 }
             }
-
+            solve(sudokuArray);
             for(var i = 0; i < 9; i++) {
                 for (var j = 0; j < 9; j++) {
-                    document.getElementById((i + 1) + "," + (j + 1)).value = sudokuArray[i][j];
+                    document.getElementById((i + 1) + "," + (j + 1)).value = sudokuArray[i][j].value;
                 }
             }
 
